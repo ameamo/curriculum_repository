@@ -18,6 +18,7 @@
                             {{ $onepost->title }}
                         </a>
                     </h2>
+                    <a href="">{{ $onepost->category->name }}</a>
                     <p class="body">{{ $onepost->body }}</p>
                     <form action="/posts/{{ $onepost->id }}" id="form_{{ $onepost->id }}" method="post">
                         @csrf
